@@ -14,6 +14,11 @@
     <classEntry path="org.log5f.viewer.connection.IRegistry"/>
     <classEntry path="org.log5f.viewer.connection.impl.NetGroupRegistry"/>
     <classEntry path="org.log5f.viewer.connection.impl.NetGroupConnector"/>
+    <classEntry path="org.log5f.viewer.view.skins.AddressBarSkin"/>
+    <classEntry path="org.log5f.viewer.view.skins.ControlBarSkin"/>
+    <classEntry path="org.log5f.viewer.view.skins.OutputBoxSkin"/>
+    <classEntry path="org.log5f.viewer.view.skins.ViewerPageSkin"/>
+    <classEntry path="org.log5f.viewer.Log5FViewer"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
