@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="org.log5f.viewer.view.components.ViewerPage"/>
+    <classEntry path="org.log5f.viewer.view.components.events.AddressBarEvent"/>
+    <classEntry path="org.log5f.viewer.view.components.ControlBar"/>
+    <classEntry path="org.log5f.viewer.view.components.events.ControlBarEvent"/>
+    <classEntry path="org.log5f.viewer.view.components.AddressBar"/>
+    <classEntry path="org.log5f.viewer.view.components.OutputBox"/>
+    <classEntry path="org.log5f.viewer.connection.IConnector"/>
+    <classEntry path="org.log5f.viewer.connection.events.ConnectorEvent"/>
+    <classEntry path="org.log5f.viewer.connection.ConnectorStatus"/>
+    <classEntry path="org.log5f.viewer.connection.ConnectorFactory"/>
+    <classEntry path="org.log5f.viewer.connection.IRegistry"/>
+    <classEntry path="org.log5f.viewer.connection.impl.NetGroupRegistry"/>
+    <classEntry path="org.log5f.viewer.connection.impl.NetGroupConnector"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
