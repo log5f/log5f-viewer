@@ -83,8 +83,9 @@ package org.log5f.viewer.connection.impl
 			{
 				const spec:GroupSpecifier = new GroupSpecifier(this.groupName);
 				spec.postingEnabled = true;
+				spec.serverChannelEnabled = true;
 				
-				this.group = new NetGroup(this.conn, spec.groupspecWithoutAuthorizations());
+				this.group = new NetGroup(this.conn, spec.groupspecWithAuthorizations());
 				this.group.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);
 			}
 			else
@@ -118,7 +119,7 @@ package org.log5f.viewer.connection.impl
 		
 		private function handleMessage(message:Object):void
 		{
-			if (message) return;
+			if (!message) return;
 			
 			this.data = message is Array ? message as Array : [message];
 			
