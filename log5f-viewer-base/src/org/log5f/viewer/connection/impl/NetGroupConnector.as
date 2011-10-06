@@ -42,7 +42,7 @@ package org.log5f.viewer.connection.impl
 		
 		public function connect(dest:Object):void
 		{
-			this.retrieveDestinationParts(dest);
+			this.retrieveDestinationParts(dest as String);
 			
 			this.connectInternal();
 		}
@@ -87,6 +87,10 @@ package org.log5f.viewer.connection.impl
 				this.group = new NetGroup(this.conn, spec.groupspecWithoutAuthorizations());
 				this.group.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);
 			}
+			else
+			{
+				this.dispatchEvent(new ConnectorEvent(ConnectorEvent.SUCCESS));
+			}
 		}
 		
 		private function abend():void
@@ -124,6 +128,8 @@ package org.log5f.viewer.connection.impl
 		/** @private */
 		private function netStatusHandler(event:NetStatusEvent):void
 		{
+			trace(event.info.code);
+			
 			switch (event.info.code)
 			{
 				// NetConnection

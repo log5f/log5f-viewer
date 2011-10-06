@@ -7,7 +7,10 @@
 		[HostComponent("org.log5f.viewer.view.components.ControlBar")]
 	</fx:Metadata>
 	
-	<!-- SkinParts
-	name=clearButton, type=spark.components.Button, required=false
-	-->
+	<s:layout>
+		<s:HorizontalLayout horizontalAlign="right" />
+	</s:layout>
+	
+	<s:Button id="clearButton" label="Clear" />
+	
 </s:Skin>

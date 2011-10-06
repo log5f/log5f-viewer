@@ -11,12 +11,12 @@ package org.log5f.viewer.connection.impl
 		
 		public function identify(source:String):Boolean
 		{
-			source && source.indexOf("rtmfp://") == 0;
+			return source && source.indexOf("rtmfp://") == 0;
 		}
 		
 		public function getConnector(source:String):IConnector
 		{
-			return null;
+			return new NetGroupConnector();
 		}
 	}
 }

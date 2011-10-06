@@ -1,0 +1,24 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace components "org.log5f.viewer.view.components.*";
+
+components|AddressBar
+{
+	skinClass: ClassReference("org.log5f.viewer.view.skins.AddressBarSkin");
+}
+
+components|OutputBox
+{
+	skinClass: ClassReference("org.log5f.viewer.view.skins.OutputBoxSkin");
+}
+
+components|ControlBar
+{
+	skinClass: ClassReference("org.log5f.viewer.view.skins.ControlBarSkin");
+}
+
+components|ViewerPage
+{
+	skinClass: ClassReference("org.log5f.viewer.view.skins.ViewerPageSkin");
+}

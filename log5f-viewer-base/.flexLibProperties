@@ -19,7 +19,10 @@
     <classEntry path="org.log5f.viewer.view.skins.OutputBoxSkin"/>
     <classEntry path="org.log5f.viewer.view.skins.ViewerPageSkin"/>
     <classEntry path="org.log5f.viewer.Log5FViewer"/>
+    <classEntry path="org.log5f.viewer.model.Page"/>
   </includeClasses>
-  <includeResources/>
+  <includeResources>
+    <resourceEntry destPath="defaults.css" sourcePath="defaults.css"/>
+  </includeResources>
   <namespaceManifests/>
 </flexLibProperties>

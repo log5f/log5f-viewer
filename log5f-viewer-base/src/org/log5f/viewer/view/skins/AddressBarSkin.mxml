@@ -7,8 +7,12 @@
 		[HostComponent("org.log5f.viewer.view.components.AddressBar")]
 	</fx:Metadata>
 	
-	<!-- SkinParts
-	name=sourceInput, type=spark.components.TextInput, required=false
-	name=goButton, type=spark.components.Button, required=false
-	-->
+	<s:layout>
+		<s:HorizontalLayout gap="0" />
+	</s:layout>
+	
+	<s:TextInput id="sourceInput" width="100%" />
+	
+	<s:Button id="goButton" label="GO" />
+	
 </s:Skin>
